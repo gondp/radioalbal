@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'com.radiosol.albal',
   appName: 'Radio Sol',
   webDir: 'www',
   server: {
