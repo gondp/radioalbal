@@ -2,10 +2,13 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.radiosol.albal',
-  appName: 'Radio Sol',
+  appName: 'Ràdio Sol Albal',
   webDir: 'www',
   server: {
     androidScheme: 'https'
+  },
+  ios: {
+    scheme: 'Ràdio Sol Albal',
   },
   plugins: {
     SplashScreen: {
@@ -25,6 +28,12 @@ const config: CapacitorConfig = {
       //useDialog: true,
     },
   },
+  android: {
+    buildOptions: {
+       keystorePath: '/Users/gonzalodiaz/Git/radiosol-albal/Documentos/websystem.keystore',
+       keystoreAlias: 'websystem',
+    },
+  }
 };
 
 export default config;

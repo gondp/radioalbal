@@ -27,11 +27,11 @@ export class DirectoPage {
 
     // Establecemos los metadatos de la sesión de medios.
     MediaSession.setMetadata({
-      title: "Radio Sol Albal 93.7 FM",
+      title: "Ràdio Sol Albal 93.7 FM",
       artist: "Directo",
       album: '',
       artwork: [
-        { src: '../../assets/img/logo-radio-sol.webp', type: 'image/png', sizes: '512x512' }
+        { src: '../../assets/img/radiosol_morado_naranja.png', type: 'image/png', sizes: '512x512' }
       ]
     });
     // Establecemos el estado de la posición de la sesión de medios.
