@@ -11,10 +11,21 @@ const config: CapacitorConfig = {
     scheme: 'Ràdio Sol Albal',
   },
   plugins: {
+    SystemBars: {
+      // La aplicación gestiona su propio layout; evita la inyección de CSS de safe-area.
+      insetsHandling: 'disable',
+      style: 'LIGHT',
+      hidden: false,
+      animation: 'NONE',
+    },
+    StatusBar: {
+      // Iconos oscuros desde el primer frame, antes de cargar Angular.
+      style: 'LIGHT',
+    },
     SplashScreen: {
-      launchShowDuration: 3000,
+      launchShowDuration: 0,
       launchAutoHide: true,
-      launchFadeOutDuration: 3000,
+      launchFadeOutDuration: 0,
       //backgroundColor: "#ffffffff",
       androidSplashResourceName: "splash",
       //androidScaleType: "CENTER_CROP",
@@ -22,8 +33,9 @@ const config: CapacitorConfig = {
       //androidSpinnerStyle: "large",
       //iosSpinnerStyle: "small",
       //spinnerColor: "#999999",
-      splashFullScreen: true,
-      splashImmersive: true,
+      // No modificar la apariencia de la barra de estado durante el arranque.
+      splashFullScreen: false,
+      splashImmersive: false,
       //layoutName: "launch_screen",
       //useDialog: true,
     },
