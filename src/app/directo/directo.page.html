@@ -26,8 +26,11 @@
 
    <ion-button (click)="radioPlay()">
     
-    <ion-icon *ngIf="isPlaying == true" name="pause-outline"></ion-icon>
-    <ion-icon *ngIf="isPlaying == false" name="play-outline"></ion-icon>
+    @if (isPlaying) {
+      <ion-icon name="pause-outline"></ion-icon>
+    } @else {
+      <ion-icon name="play-outline"></ion-icon>
+    }
     
   </ion-button>
   </div>

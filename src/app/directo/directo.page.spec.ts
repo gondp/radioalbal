@@ -1,7 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
-
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { DirectoPage } from './directo.page';
 
@@ -11,8 +8,7 @@ describe('DirectoPage', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DirectoPage],
-      imports: [IonicModule.forRoot(), ExploreContainerComponentModule]
+      imports: [DirectoPage]
     }).compileComponents();
 
     fixture = TestBed.createComponent(DirectoPage);

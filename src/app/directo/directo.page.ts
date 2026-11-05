@@ -1,16 +1,21 @@
-import { Component, NgZone } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, inject, NgZone } from '@angular/core';
+import { IonButton, IonContent, IonHeader, IonIcon } from '@ionic/angular';
 import { MediaSession } from '@jofr/capacitor-media-session';
 
 @Component({
   selector: 'app-directo',
   templateUrl: 'directo.page.html',
-  styleUrls: ['directo.page.scss']
+  styleUrls: ['directo.page.scss'],
+  standalone: true,
+  imports: [CommonModule, IonButton, IonContent, IonHeader, IonIcon],
 })
 export class DirectoPage {
   isPlaying = false;
   public playbackStopped: any;
+  private readonly ngZone = inject(NgZone);
 
-  constructor(private ngZone: NgZone) {
+  constructor() {
     // Establecemos los manejadores de acción para los eventos 'play' y 'pause' de MediaSession.
     // Ambos eventos llamarán a la función radioPlay.
     MediaSession.setActionHandler({ action: 'play' }, () => this.radioPlay());
