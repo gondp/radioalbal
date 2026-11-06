@@ -42,6 +42,7 @@ const config: CapacitorConfig = {
   },
   android: {
     buildOptions: {
+          signingType: 'apksigner',
        keystorePath: '/Users/gonzalodiaz/Git/radiosol-albal/Documentos/websystem.keystore',
        keystoreAlias: 'websystem',
     },

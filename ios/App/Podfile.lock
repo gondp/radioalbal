@@ -12,6 +12,8 @@ PODS:
     - Capacitor
   - CapacitorStatusBar (8.0.3):
     - Capacitor
+  - CapgoCapacitorMediaSession (8.1.7):
+    - Capacitor
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
@@ -21,6 +23,7 @@ DEPENDENCIES:
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
   - "CapacitorSplashScreen (from `../../node_modules/@capacitor/splash-screen`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
+  - "CapgoCapacitorMediaSession (from `../../node_modules/@capgo/capacitor-media-session`)"
 
 EXTERNAL SOURCES:
   Capacitor:
@@ -37,6 +40,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/splash-screen"
   CapacitorStatusBar:
     :path: "../../node_modules/@capacitor/status-bar"
+  CapgoCapacitorMediaSession:
+    :path: "../../node_modules/@capgo/capacitor-media-session"
 
 SPEC CHECKSUMS:
   Capacitor: 89067779e14fb7ea56af07b4817f45d1f0c2a269
@@ -46,7 +51,8 @@ SPEC CHECKSUMS:
   CapacitorKeyboard: b6b0744890cdb1d9a96e2cafcc9253fdcc55de3b
   CapacitorSplashScreen: 7bf61c2001557ff9e195e601c6b87344480d3c65
   CapacitorStatusBar: eca7bc2b58d9f886f1ef9edb66e57a9b29c121af
+  CapgoCapacitorMediaSession: 1b5f437f87367b4b143e263ad450e6717206a0f0
 
-PODFILE CHECKSUM: 87b45c567a9ade1f887a2656149fdc2650659cfa
+PODFILE CHECKSUM: 34dc4e4aec061b40e5e677a540d72f9c3b592225
 
 COCOAPODS: 1.17.0
